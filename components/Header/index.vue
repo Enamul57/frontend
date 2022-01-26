@@ -69,6 +69,7 @@ export default {
 }
 .menu a{
   color: white;
+  text-align: center;
 }
 .navbar img {
   border-radius: 50%;
@@ -79,11 +80,15 @@ export default {
   border: 1px solid white;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  
+}
+.question a{
+  padding-left:8px;
+  padding-right:8px;
 }
 .btnBox {
   border: 1px solid white;
+  text-align: center;
 }
 .menu .btnPrime {
   font-size: 1rem;
@@ -95,4 +100,78 @@ export default {
   color: #003580 !important;
 
 }
+@media screen and (max-width:760px){
+  .menu a, .btnPrime,.btnBox{
+    font-size:0.8rem;
+  }
+  .navbar li{
+    padding: 0.3em 0.3em;
+  }
+}
+@media screen and (min-width:550px)and (max-width:650px){
+  .menu a, .btnPrime,.btnBox{
+    font-size:0.7rem;
+  
+  }
+  .navbar li{
+    padding:0.1em 0.1em;
+  }
+}
+@media screen and (min-width:450px)and (max-width:549px){
+  .menu a, .btnPrime,.btnBox{
+    font-size:0.6rem;
+  }
+  .btnBox a{
+    padding:0.6em ;
+  }
+  .navbar li{
+    padding:0.1em 0.1em;
+  }
+  
+}
+@media screen and (min-width:380px)and (max-width:449px){
+  .logo{
+    width:40%;
+  }
+
+  .logo h3{
+    font-size:1rem;
+  }
+  .navbar{
+    width:70%;
+  }
+  .menu a, .btnPrime,.btnBox{
+    font-size:0.5rem;
+  }
+  .question{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .navbar li{
+    padding:0.1em 0.1em;
+  }
+}
+@media screen and (min-width:200px)and (max-width:380px){
+  .logo{
+    width:40%;
+  }
+
+  .logo h3{
+    font-size:0.8rem;
+  }
+  .navbar{
+    width:70%;
+  }
+  .menu a, .btnPrime,.btnBox{
+    font-size:0.3rem;
+  }
+  .navbar li{
+    padding:1px 1px;
+  }
+  .question{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 </style>
