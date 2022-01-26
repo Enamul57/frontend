@@ -10,10 +10,14 @@
                        <li><a href=""><img src="~/assets/img/Usa.png" alt=""></a></li>
                        <li class='question'><a href=""><i class="fas fa-question"></i></a></li>
                        <li><a href="" class='btnBox' >List Your Property</a></li>
-                       <li><a href="" class=' btnprime'>Register</a></li>
-                       <li><a href="" class=' btnprime'>Sign In</a></li>
+                       <li><a href="" class='btnprime'>Register</a></li>
+                       <li><a href="" class='btnprime'>Sign In</a></li>
                    </ul>
                </div>
+               
+             
+
+           
        </div>
     </div>
 </template>
@@ -47,7 +51,7 @@ export default {
     font-size:1.5rem;
 }
 .topbar{
-    width:90%;
+    width:100%;
     display:flex;
    position:absolute;
    margin-top:0.4em;
@@ -59,22 +63,23 @@ export default {
 
 }
 .rightbar{
-    position:relative;
-    font-size:1rem;
     align-items: center;
 }
 .rightbar ul{
     display:flex;
     list-style: none;
-    padding:1em;
-    position: absolute;
-    top:0;
+    padding:0 ;
+    margin:0;
+    width:100%;
+    align-items:center;
 }
 .rightbar li{
     text-decoration: none;
     padding:10px;
     text-align: center;
     margin:0 auto;
+    display:inline-block;
+    height:40px;
 }
 .menu a{
     font-size:1rem;
@@ -99,14 +104,15 @@ export default {
     padding-bottom: 12px;
 }
 .btnBox{
-    font-size:1rem;
+    font-size:0.7rem;
     color:white;
     background: transparent;
     padding:5px 10px 15px 10px;
     outline:none;
     border:1px solid white;
+    text-align: center;
 }
-.menu .btnprime{
+ .menu.btnprime{
     font-size:1rem;
     color:#003580;
     background: white;
@@ -115,6 +121,9 @@ export default {
     border:1px solid white;
     font-weight:bold;
 }
+
+
+
 
 @media screen and (min-width:221px)and (max-width:400px) {
     #header h2{
