@@ -1,6 +1,7 @@
 <template>
   <div id="header">
-    <div class="logo">
+    <div class="navbarone">
+      <div class="logo">
       <h3>Booking.com</h3>
     </div>
     <div class="navbar">
@@ -17,7 +18,9 @@
         <li class="btnPrime"><a href="">Sign In</a></li>
       </ul>
     </div>
+    </div>
   </div>
+  
 </template>
 <script>
 export default {
@@ -37,7 +40,7 @@ export default {
 };
 </script>
 <style>
-#header {
+.navbarone {
   width: 100%;
   display: flex;
   font-family: Avenir Next, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto,
@@ -138,8 +141,8 @@ export default {
   .logo h3{
     font-size:1.1rem;
   }
-  .navbar{
-    margin-left:-20%;
+  .navbar ul{
+    margin-left:15%;
   }
 }
 
@@ -165,8 +168,8 @@ export default {
     padding:0.1em 0.1em;
     margin-right: 0.2em;
   }
-  .navbar {
-    margin-left:-25%;
+  .navbar ul{
+    margin-left:10%;
   }
 }
 @media screen and (min-width:200px)and (max-width:380px){
@@ -188,8 +191,8 @@ export default {
     padding:1px 1px;
     margin-right: 0.2em;
   }
- .navbar {
-   margin-left:-30%;
+ .navbar ul {
+   margin-left:5%;
  }
 }
 
