@@ -51,6 +51,8 @@ export default {
 }
 .logo h3 {
   font-size: 1.5rem;
+  margin-top:1em;
+
 }
 .navbar {
   width: 60%;
@@ -62,10 +64,12 @@ export default {
   width: 100%;
   text-decoration: none;
   list-style: none;
+  margin-left: 20%;
 }
 .navbar li {
   text-align: center;
   padding: 0.5em 0.5em;
+  margin-right: 0.2em;
 }
 .menu a{
   color: white;
@@ -75,11 +79,10 @@ export default {
   border-radius: 50%;
   height: 30px;
 }
-.question {
+.question i{
   border-radius: 49%;
   border: 1px solid white;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   
 }
 .question a{
@@ -89,12 +92,14 @@ export default {
 .btnBox {
   border: 1px solid white;
   text-align: center;
+  margin: 0.5em;
 }
 .menu .btnPrime {
   font-size: 1rem;
   border: 1px solid white;
   font-weight: bold;
   background: white;
+  margin: 0.5em;
 }
 .btnPrime a{
   color: #003580 !important;
@@ -106,6 +111,7 @@ export default {
   }
   .navbar li{
     padding: 0.3em 0.3em;
+    margin-right: 0.2em;
   }
 }
 @media screen and (min-width:550px)and (max-width:650px){
@@ -115,6 +121,7 @@ export default {
   }
   .navbar li{
     padding:0.1em 0.1em;
+    margin-right: 0.2em;
   }
 }
 @media screen and (min-width:450px)and (max-width:549px){
@@ -126,9 +133,16 @@ export default {
   }
   .navbar li{
     padding:0.1em 0.1em;
+    margin-right: 0.2em;
   }
-  
+  .logo h3{
+    font-size:1.1rem;
+  }
+  .navbar{
+    margin-left:-20%;
+  }
 }
+
 @media screen and (min-width:380px)and (max-width:449px){
   .logo{
     width:40%;
@@ -149,6 +163,10 @@ export default {
   }
   .navbar li{
     padding:0.1em 0.1em;
+    margin-right: 0.2em;
+  }
+  .navbar {
+    margin-left:-25%;
   }
 }
 @media screen and (min-width:200px)and (max-width:380px){
@@ -158,6 +176,7 @@ export default {
 
   .logo h3{
     font-size:0.8rem;
+    float:left;
   }
   .navbar{
     width:70%;
@@ -167,11 +186,11 @@ export default {
   }
   .navbar li{
     padding:1px 1px;
+    margin-right: 0.2em;
   }
-  .question{
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+ .navbar {
+   margin-left:-30%;
+ }
 }
 
 </style>
